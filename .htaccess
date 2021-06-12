@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^forgetpassword resetpass.php [NC,L]
+RewriteRule ^login loginpage.php [NC,L]
+RewriteRule ^signup registerpage.php [NC,L]
+#RewriteRule ^reset reset.php [NC,L]
+RewriteRule ^home index.php [NC,L]
+RewriteRule ^dashboard dasboard.php [NC,L]
