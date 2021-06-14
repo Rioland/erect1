@@ -12,7 +12,7 @@ if (isset($_POST['action']) and $_POST['action'] == "register") {
 
 } else if (isset($_POST['action']) and $_POST['action'] == "login") {
     $email = $_POST['email'];
-    $pass = $_POST['pass'];
+    $pass = $_POST['password'];
     $response = $database->signin_user($email, $pass);
     echo $response;
 
@@ -27,7 +27,7 @@ if (isset($_POST['action']) and $_POST['action'] == "reset") {
         $updateToken = $database->updateresetToken($token, $email);
         if ($updateToken) {
             $sub = "Password reset message from Erectone";
-            $mess = "please click on the following link to reset your account password http://" . $_SERVER['SERVER_NAME'] . '/erect1/changepasspage.php?token=' . $token . " please ignore if you are not the one that requested for the password reset";
+            $mess = "please click on the following link to reset your account password http://" . $_SERVER['SERVER_NAME'] . '/erect1/verifypassword/' . $token . " please ignore if you are not the one that requested for the password reset";
             $isSendMail = send_mail($email, $mess, $sub);
             if ($isSendMail) {
                 echo "email has been sent to " . $email;

@@ -174,7 +174,7 @@ public function register($email, $pass, $country)
         if ($feildback and $feildback1) {
             $sub = "Verification message from Erectone";
 
-            $mess = "please click on the following link to verify your account http://" . $_SERVER['SERVER_NAME'] . '/erect1/verify.php?token=' . $token;
+            $mess = "please click on the following link to verify your account http://" . $_SERVER['SERVER_NAME'] . '/erect1/verify/' . $token;
             send_mail($email, $mess, $sub);
 
             return true;

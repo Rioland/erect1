@@ -82,7 +82,7 @@ $(document).ready(function () {
                 window.location.href = 'dasboard'
               } else {
                 console.log(response)
-                alert(response)
+                alert("invalid login detail")
               }
             },
           })

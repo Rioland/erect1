@@ -13,33 +13,34 @@
     <title>Hello, world!</title>
     <link rel="stylesheet" href="./css/firststyle.css">
     <style>
-        .al3 {
-            text-align: center;
-            justify-content: center;
-        }
+    .al3 {
+        text-align: center;
+        justify-content: center;
+    }
 
-        .buying {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-        }
+    .buying {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
 
-        .buy {
-            margin: 10px;
-        }
+    .buy {
+        margin: 10px;
+    }
 
-        .sell {
-            margin: 10px;
-        }
+    .sell {
+        margin: 10px;
+    }
 
-        .mg2 {
-            margin: 20px;
-        }
-        .hover:hover{
-         background-color: blue;
-         color: white;
-         border: 2px solid transparent;
-        }
+    .mg2 {
+        margin: 20px;
+    }
+
+    .hover:hover {
+        background-color: blue;
+        color: white;
+        border: 2px solid transparent;
+    }
     </style>
 </head>
 
@@ -47,7 +48,7 @@
     <!-- <img src="./app/Apis/api.php" alt="" srcset=""> -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-            
+
             <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -60,7 +61,7 @@
                         <a class="nav-link active" style="color: white;" aria-current="page" href="#">BUY/SELL</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" style="color: white;" aria-current="page" href="#">TRADE</a>
+                        <a class="nav-link active" style="color: white;" aria-current="page" href="trade">TRADE</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" style="color: white;" aria-current="page" href="#">FINANCE</a>
@@ -177,7 +178,7 @@
         <div class="col hover">
             <div class="card">
                 <div class="alert alert-primary" role="alert">
-                    $ 2000
+                    $2000
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -252,8 +253,8 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

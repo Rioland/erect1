@@ -1,4 +1,5 @@
 <?php
+require "loginhead.php";
 require "app/Apis/database/Database.php";
 require 'app/Apis/database/Config/Config.php';
 $database = new Database($conn);
@@ -17,7 +18,7 @@ if (!isset($_GET['token']) or empty($_GET['token'])) {
 }
 
 
-require "loginhead.php";
+
 ?>
 <div class="wrapper">
     <div class="maincontainer">
